@@ -19,7 +19,7 @@ header {
 #course-title {
   display: block;
   text-align: center;
-  font-size: 2.0rem;
+  font-size: 2rem;
   padding-bottom: 3.5rem;
   padding-top: 0.1rem;
   color: #fff;
@@ -56,7 +56,7 @@ nav a:hover {
 }
 
 nav a:visited {
-  color: #0000FF;
+  color: #0000ff;
 }
 
 section a:link {
@@ -142,10 +142,10 @@ figcaption {
   color: #333;
   font-style: italic;
   margin-top: 0.9rem;
-  position: absolute; 
+  position: absolute;
   padding-left: 15px;
   padding-top: 85px;
-}  
+}
 
 .p-photo {
   padding-top: 25px;
