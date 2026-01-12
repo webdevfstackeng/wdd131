@@ -21,7 +21,7 @@ header {
   text-align: center;
   font-size: 2rem;
   padding-bottom: 3.5rem;
-  padding-top: 0.1rem;
+  padding-top: 3rem;
   color: #fff;
   font-weight: 100;
 }
@@ -31,6 +31,7 @@ h1 {
   grid-column: 1/-1;
   font-size: 1.7rem;
   font-weight: 400;
+  padding-top: 4rem;
 }
 
 nav {
@@ -56,7 +57,7 @@ nav a:hover {
 }
 
 nav a:visited {
-  color: #0000ff;
+  color: red;
 }
 
 section a:link {
@@ -107,9 +108,9 @@ main {
   margin: 0.5rem;
 }
 
-h1 {
+/* h1 {
   padding-top: 4rem;
-}
+} */
 
 section h2 {
   background: #15505e;
@@ -179,9 +180,9 @@ figcaption {
   border: 0;
 }
 
-section a:link {
+/* section a:link {
   padding-left: 1.5rem;
-}
+} */
 
 .date-format {
   color: #fff;
