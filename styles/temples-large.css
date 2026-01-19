@@ -23,13 +23,12 @@
 
   header h1 {
     font-size: 1.2rem;
-    text-align: center;
+    text-align:left;
   }
 
   main h2 {
     grid-column: 1 / -1; /* span all columns */
     text-align: center;  
-    margin-bottom: 1rem;
   }
 
   main img {

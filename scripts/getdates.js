@@ -12,7 +12,7 @@ last.innerHTML = ` Last Modified: <span class="date-format">${new Intl.DateTimeF
   "en-US",
   {
     dateStyle: "short",
-  }
+  },
 ).format(today)}</span>`;
 
 short.innerHTML = `<span class="date-format">${today.getFullYear()}</span>`;
