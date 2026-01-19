@@ -95,7 +95,7 @@ nav a.active {
 }
 
 h1 {
-  align-items:left;
+  text-align:left;
   justify-content: flex-start;
   align-content: center;
   font-size: large;
