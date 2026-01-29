@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="I live in a country called Botswana, located in the middle of Southern Africa."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="author" content="Kgotla Ephraim Boabilwe" />
+    <link rel="stylesheet" href="styles/place.css" />
+    <script src="scripts/place.js" defer></script>
+    <title>WDD 131 - The Place Where I Live</title>
+  </head>
+  <body class="page">
+    <header>
+      <h1>Botswana</h1>
+    </header>
+    <main>
+      <div class="hero">
+        <picture>
+          <!-- Show chilling zebra only on small screens -->
+          <source srcset="images/zebras.webp" media="(max-width: 767px)" />
+
+          <!-- Default responsive image for larger screens -->
+          <source srcset="images/hero-large.webp" media="(min-width: 800px)" />
+          <source srcset="images/hero-medium.webp" media="(min-width: 400px)" />
+          <img
+            alt="Zebra, Botswana's national animal"
+            src="images/hero-small.webp"
+            width="300"
+            height="150"
+          />
+        </picture>
+      </div>
+      <div class="data">
+        <h2>Data</h2>
+        <ul class="place-data">
+          <li>
+            <span class="label">Area:</span>
+            <span class="value"> 581,730 km²</span>
+          </li>
+          <li>
+            <span class="label">Population:</span>
+            <span class="value">2,521,000</span>
+          </li>
+          <li>
+            <span class="label">Capital:</span>
+            <span class="value">Gaborone</span>
+          </li>
+          <li>
+            <span class="label">Language:</span>
+            <span class="value">Setswana, English</span>
+          </li>
+          <li>
+            <span class="label">Currency:</span>
+            <span class="value">Botswana Pula</span>
+          </li>
+          <li>
+            <span class="label">Time Zone:</span>
+            <span class="value">UTC+2</span>
+          </li>
+          <li>
+            <span class="label">Calling Code:</span>
+            <span class="value">+267</span>
+          </li>
+          <li>
+            <span class="label">Internet TLD:</span>
+            <span class="value">.bw</span>
+          </li>
+        </ul>
+      </div>
+      <div class="weather">
+        <div>
+          <div>
+            <h2 >Weather</h2>
+            <img
+              src="images/weather.svg"
+              alt="Weather icon"
+              width="50"
+              height="50"
+              class="weather-svg"
+            >
+          </div>
+        </div>
+        <div>
+            <img
+              src="images/weather.png"
+              alt="Weather icon"
+              width="50"
+              height="50"
+              class="weather-icon"
+            >
+        </div>
+        <ul class="weather-data">
+          <li>
+            <span class="label">Temperature:</span>
+            <span class="value">29°C</span>
+          </li>
+          <li>
+            <span class="label">Conditions:</span>
+            <span class="value">Clear Sky</span>
+          </li>
+          <li>
+            <span class="label">Wind:</span> <span class="value">14km/h</span>
+          </li>
+          <li>
+            <span class="label">Wind Chill:</span>
+            <span class="value">26°C</span>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <p>&COPY;<span id="short"></span> | Kgotla Ephraim Boabilwe | Botswana</p>
+      <p><span id="lastModified"></span></p>
+      <p>Current Wind Chill: <span id="windChillDisplay"></span></p>
+    </footer>
+  </body>
+</html>
