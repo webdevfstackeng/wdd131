@@ -15,7 +15,7 @@ header {
   justify-content: space-between;
   padding: 1rem;
   background: rgb(67, 67, 221);
-  color: white;
+  color: #fff;
 }
 
 h1 {
@@ -43,7 +43,7 @@ nav ul {
 }
  
 nav a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   padding: 1rem;
 }
@@ -74,7 +74,7 @@ nav.open {
   right: 10px;
   border: none;
   font-size: 2rem;
-  color: white;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -100,7 +100,7 @@ figure {
 
 footer {
   background: rgb(67, 67, 221);
-  color: white;
+  color: #fff;
   text-align: center;
   padding: 1.5rem;
 }
