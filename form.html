@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Product Review Form</title>
+    <meta
+      name="description"
+      content="This WDD 131 - Dynamic Web Fundamentals web page features a form design in Frontend Web Development using HTML, CSS and Javascript"
+    />
+    <meta name="author" content="Kgotla Ephraim Boabilwe" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <script src="scripts/form.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Product Review</h1>
+    </header>
+    <main>
+      <form method="get" action="review.html" id="prf">
+        <fieldset>
+          <legend>Product Name</legend>
+          <label for="product" class="visually-hidden"></label>
+          <select type="name"id="product" name="name" required autocomplete="name">
+            <option value=" " disabled selected>Select a Product ...</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Overall Rating</legend>
+          <div class="stars">
+            <div>
+              <label for="1star">★</label>
+              <input type="radio" id="1star" name="stars" value="1" required />
+            </div>
+            <div>
+              <label for="2star">★★</label>
+              <input type="radio" id="2star" name="stars" value="2" required />
+            </div>
+            <div>
+              <label for="3star">★★★</label>
+              <input type="radio" id="3star" name="stars" value="3" required />
+            </div>
+            <div>
+              <label for="4star">★★★★</label>
+              <input type="radio" id="4star" name="stars" value="4" required />
+            </div>
+            <div>
+              <label for="5star">★★★★★</label>
+              <input type="radio" id="5star" name="stars" value="5" required />
+            </div>
+          </div>
+        </fieldset>
+        <!-- each of the radio buttons that are part of this rating have the same name value to allow one selection -->
+        <fieldset>
+          <legend>Date of Installation*</legend>
+          <label for="date-installed" class="visually-hidden">Date Installed</label>
+          <label
+            ><input type="date" id="date-installed" name="date" required autocomplete="date"></label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>
+            Select features that you find useful <em>(Check all that apply)</em>
+          </legend>
+          <label
+            ><input
+              type="checkbox"
+              id="durable"
+              name="feature"
+              value="yes"
+            />Durability</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="usable"
+              name="feature"
+              value="yes"
+            />Usability</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="perform"
+              name="feature"
+              value="yes"
+            />Performance</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="design"
+              name="feature"
+              value="yes"
+            />Design</label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>Written Review (Optional)</legend>
+          <label for="review" class="visually-hidden">Your Review</label>
+          <label
+            ><input type="textarea" id="review" name="review" autocomplete="textarea"></label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>Your Name (Optional)</legend>
+          <label for="username" class="visually-hidden">Name</label>
+          <label
+            ><input type="text" id="username" name="user" autocomplete="text" ></label
+          >
+        </fieldset>
+        <fieldset>
+          <legend hidden>Form Submission Button</legend>
+          <label for="btn" class="visually-hidden">Submit Form</label>
+          <label
+            ><input
+              type="submit"
+              id="btn"
+              value="Post Review"
+              autocomplete="submit"></label
+          >
+        </fieldset>
+        <!-- <fieldset>
+          <legend>Written Review (Optional)</legend>
+
+          <label for="review" class="visually-hidden">Your Review</label>
+          <textarea id="review" name="review" rows="4" cols="40"></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your Name (Optional)</legend>
+
+          <label for="username" class="visually-hidden">Name</label>
+          <input 
+            type="text" 
+            id="username" 
+            name="user"
+            autocomplete="name"
+          >
+        </fieldset>
+
+        <fieldset>
+          <label for="submit" class="visually-hidden">Submit Form</label>
+          <input
+            type="submit"
+            id="btn"
+            value="Post Review"
+          >
+        </fieldset> -->
+      </form>
+    </main>
+    <footer>
+      <p>
+        &COPY;<span id="short">2026</span> | Kgotla Ephraim Boabilwe | Botswana
+      </p>
+      <p><span id="lastModified"></span></p>
+    </footer>
+  </body>
+</html>

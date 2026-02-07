@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="This WDD 131 - Dynamic Web Fundamentals presents web page features of a form design with access to localStorage hit count."
+    />
+    <title>Product Review Submission</title>
+    <meta name="author" content="Kgotla Ephraim Boabilwe" />
+  </head>
+  <body>
+    <h1>Product Review Submission</h1>
+
+    <h2>Thank you for submitting your review!</h2>
+
+    <p>You have submitted <span id="reviewCount">0</span> reviews so far.</p>
+    <!--Display stored count when the review page loads -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const count = localStorage.getItem("reviewCount") || 0;
+        document.getElementById("reviewCount").textContent = count;
+      });
+    </script>
+  </body>
+</html>

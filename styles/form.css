@@ -1,0 +1,161 @@
+/*------------ Form Styling -------------*/
+html {
+  background-color: #fff;
+}
+body {
+  display: flex;
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ede8e8;
+  border: solid 1px #999;
+  max-width: 420px;
+  padding: 0;
+  min-height: 100vh;
+}
+header {
+  background: darkblue;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 420px;
+  justify-items: center;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  color: #fff;
+}
+#prf fieldset {
+  margin: 1rem 0;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 0.1rem 0;
+  max-width: 400px;
+}
+
+.hide-opacity {
+  opacity: 0;
+}
+
+#prf legend {
+  color: darkblue;
+  padding: 0 0.3rem;
+  padding-bottom: 0.1rem;
+  max-width: 400px;
+}
+
+#prf label {
+  display: block;
+  font-weight: 700;
+  color: darkblue;
+  font-size: 0.9rem;
+  max-width: 400px;
+}
+
+#prf input[type="date"] {
+  padding: 0 0.4rem;
+}
+
+#prf input[type="text"],
+#prf input[type="date"],
+#prf input[type="radio"] #prf input[type="checkbox"],
+#prf input[type="textarea"] {
+  background-color: #eee;
+  display: block;
+  border: solid 1px #999;
+  border-radius: 5px;
+  padding: 0.4rem 0;
+  color: #444;
+  max-width: 400px;
+  width: 100%;
+}
+
+.stars {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.stars input[type="radio"] {
+  display: block;
+  width: 60px;
+  border: 1px solid gray;
+  margin-top: 0.5rem;
+  accent-color: gold;
+}
+
+#prf input[type="radio"] {
+  padding: 1.9rem 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+.stars div {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.stars label {
+  display: block;
+  align-items: center;
+  font-size: 0.7rem;
+  color: rgb(72, 71, 71);
+  cursor: pointer;
+}
+
+.stars input[type="radio"]:checked + label,
+.stars label:hover {
+color: gold;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+#prf input[type="checkbox"] {
+  margin-right: 6px;
+  margin-bottom: 0.5rem;
+}
+
+#prf input[type="textarea"] {
+  /* padding: 1.9rem 0; */
+  padding: 0.4rem 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+#btn {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+  border: solid 1px #999;
+  padding: 0.4rem 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+select#product {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+  border: solid 1px #999;
+  padding: 0.4rem 0;
+}
+
+footer {
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  max-width: 420px;
+  color: #fff;
+  background-color: darkblue;
+  padding: 0.5rem 0rem;
+}
