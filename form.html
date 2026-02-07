@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
       rel="stylesheet"
@@ -25,8 +25,8 @@
         <fieldset>
           <legend>Product Name</legend>
           <label for="product" class="visually-hidden"></label>
-          <select type="name"id="product" name="name" required autocomplete="name">
-            <option value=" " disabled selected>Select a Product ...</option>
+          <select id="product" name="product" required>
+            <option value="" disabled selected>Select a Product ...</option>
           </select>
         </fieldset>
         <fieldset>
@@ -59,7 +59,7 @@
           <legend>Date of Installation*</legend>
           <label for="date-installed" class="visually-hidden">Date Installed</label>
           <label
-            ><input type="date" id="date-installed" name="date" required autocomplete="date"></label
+            ><input type="date" id="date-installed" name="date" required></label
           >
         </fieldset>
         <fieldset>
@@ -72,45 +72,42 @@
               id="durable"
               name="feature"
               value="yes"
-            />Durability</label
-          >
-          <label
-            ><input
+            />Durability</label>
+          <label><input
               type="checkbox"
               id="usable"
               name="feature"
               value="yes"
-            />Usability</label
-          >
-          <label
-            ><input
+            >Usability</label>
+            <label><input
               type="checkbox"
               id="perform"
               name="feature"
-              value="yes"
-            />Performance</label
-          >
-          <label
-            ><input
+              value="yes">Performance</label>
+            <label><input
               type="checkbox"
               id="design"
               name="feature"
-              value="yes"
-            />Design</label
-          >
+              value="yes">Design</label>          
         </fieldset>
         <fieldset>
           <legend>Written Review (Optional)</legend>
           <label for="review" class="visually-hidden">Your Review</label>
-          <label
-            ><input type="textarea" id="review" name="review" autocomplete="textarea"></label
-          >
+          <textarea
+            id="review"
+            name="review"
+            rows="4"
+            cols="40"
+          ></textarea>
+          <!-- <label
+            ><input type="textarea" id="review" name="review"></label
+          > -->
         </fieldset>
         <fieldset>
           <legend>Your Name (Optional)</legend>
           <label for="username" class="visually-hidden">Name</label>
           <label
-            ><input type="text" id="username" name="user" autocomplete="text" ></label
+            ><input type="text" id="username" name="user"></label
           >
         </fieldset>
         <fieldset>
@@ -120,9 +117,7 @@
             ><input
               type="submit"
               id="btn"
-              value="Post Review"
-              autocomplete="submit"></label
-          >
+              value="Post Review"></label>
         </fieldset>
         <!-- <fieldset>
           <legend>Written Review (Optional)</legend>
