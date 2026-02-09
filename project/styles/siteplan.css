@@ -57,7 +57,7 @@ h2 {
 /************ SERVICE CARDS **********/
 .cards {
     display: grid;
-    grid-template-columns: 4fr;
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
@@ -79,6 +79,6 @@ footer {
 /************* DESKTOP VIEW *******************/
 @media (min-width: 768px) {
     .cards {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
