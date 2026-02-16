@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact Submission Form</title>
+    <meta
+      name="description"
+      content="This WDD 131 - Dynamic Web Fundamentals web page features a form design in Frontend Web Development using HTML, CSS and Javascript"
+    />
+    <meta name="author" content="Kgotla Ephraim Boabilwe" />
+    <link rel="stylesheet" href="styles/contact-us.css" />
+    <!-- <script src="scripts/contact-us.js" defer></script> -->
+  </head>
+
+    <meta
+      name="description"
+      content="This WDD 131 - Dynamic Web Fundamentals presents web page features of a form design with access to localStorage hit count."
+    />
+    <title>Contact Details Submission</title>
+    <meta name="author" content="Kgotla Ephraim Boabilwe" />
+  </head>
+  <body>
+    <h1>Contact Details Submission</h1>
+
+    <h2>Thank you for submitting your contact details!</h2>
+
+    <p>We have received <span id="contactCount">0</span> contacts so far.</p>
+    <!--Display stored count when the review page loads -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const count = localStorage.getItem("reviewCount") || 0;
+        document.getElementById("reviewCount").textContent = count;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact Submission Form</title>
+    <meta
+      name="description"
+      content="This WDD 131 - Dynamic Web Fundamentals web page features a form design in Frontend Web Development using HTML, CSS and Javascript"
+    />
+    <meta name="author" content="Kgotla Ephraim Boabilwe" />
+    <link rel="stylesheet" href="styles/contact-us.css" />
+    <script src="scripts/contact-us.js" defer></script>
+     <script src="scripts/getdates.js" defer></script>
+  </head>
+
+<body>
+    <form class="contact-form">
+        <h2>Contact Us</h2>
+        
+        <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="event-type">Event Type:</label>
+            <select id="event-type" name="event-type">
+                <option value="" disabled selected>Select an Event</option>
+                <option value="wedding">Wedding</option>
+                <option value="party">Party</option>
+                <option value="corporate">Corporate</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="location">Event Location:</label>
+            <input type="text" id="location" name="location">
+        </div>
+
+        <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </body>
+    </html>

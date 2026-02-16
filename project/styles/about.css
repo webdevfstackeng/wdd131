@@ -1,0 +1,171 @@
+/******************* GLOBAL RESET ****************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/******************** BODY ***********************/
+body {
+  font-family: sans-serif;
+  background-color: white;
+  align-items: center;
+  color: black;
+  line-height: 1.6;
+}
+
+/****************** HEADER ***********************/
+.header {
+  display: flex;
+  width: 100%;
+  background-color: #800020;
+  color: white;
+  padding: 15px 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand h1 {
+  font-family: sans-serif, Roboto;
+  font-size: 1.2rem;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+h1 {
+  margin: 0;
+  color: #fff;
+}
+
+h2 {
+  font-size: 1rem;
+  color: #800020;            /* burgundy */
+  margin-bottom: 15px;
+  text-align: center;
+  position: relative;
+}
+
+h3 {
+  font-size: 1rem;
+  color: #800020;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav a {
+  color: #fff;
+}
+
+.nav a:hover {
+  color: gold;
+}
+
+/*************** About container ******************/
+.about-section {
+    padding: 80px 20px;
+    background: #f8f8f8;
+}
+
+.about-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#about-content h2 {
+    color: #800020;
+    margin-bottom: 20px;
+}
+
+/************************** Mission and Vision  ***************************/
+.mission-vision {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.mv-box {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.mv-box h3 {
+    color: #800020;
+    margin-bottom: 20px;
+}
+
+/************** Matrics section ******************/
+.about-stats {
+    background: white;
+    color: #000;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 2.5rem;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+/*************** Desktop View *****************/
+@media (max-width: 768px) {
+
+    .about-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .mission-vision {
+        grid-template-columns: 1fr;
+    }
+
+    .about-stats {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+/********************* FOOTER *************************/
+footer {
+  background-color: #800020;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 5px;
+}

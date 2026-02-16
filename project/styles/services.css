@@ -1,0 +1,140 @@
+/******************* Global Reset ****************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/******************** Body ***********************/
+body {
+  font-family: sans-serif;
+  background-color: white;
+  align-items: center;
+  color: black;
+  line-height: 1.6;
+}
+
+/****************** Header ***********************/
+.header {
+  display: flex;
+  width: 100%;
+  background-color: #800020;
+  color: white;
+  padding: 15px 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand h1 {
+  font-family: sans-serif, Roboto;
+  font-size: 1.2rem;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+h1 {
+  margin: 0;
+  color: #fff;
+}
+
+h2 {
+  font-size: 1rem;
+  color: #800020;            
+  margin-bottom: 15px;
+  text-align: center;
+  position: relative;
+}
+
+h3 {
+  font-size: 1rem;
+  color: #800020;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav a {
+  color: #fff;
+}
+
+.nav a:hover {
+  color: gold;
+}
+
+/******** MAIN *******/
+main {
+  padding: 30px;
+  align-items: center;
+  min-height: 77vh;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.services-intro, h3 {
+  text-align: center;
+  justify-content: center;
+   max-width: 900px;
+   margin: 0 auto;
+   padding: 50px 20px;
+}
+
+.service-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.service-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.card {
+  border: 2px solid gold;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+/************* Desktop View *******************/
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/********************* Footer *************************/
+footer {
+  background-color: #800020;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 5px;
+}
+

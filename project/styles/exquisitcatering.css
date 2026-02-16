@@ -1,0 +1,181 @@
+/******************* GLOBAL RESET ****************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/******************** BODY ***********************/
+body {
+  font-family: sans-serif;
+  background-color: white;
+  align-items: center;
+  color: black;
+  line-height: 1.6;
+}
+
+/****************** HEADER ***********************/
+.header {
+  display: flex;
+  width: 100%;
+  background-color: #800020;
+  color: white;
+  padding: 15px 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand h1 {
+  font-family: sans-serif, Roboto;
+  font-size: 1.2rem;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+h1 {
+  margin: 0;
+  color: #fff;
+}
+
+h2 {
+  font-size: 1rem;
+  color: #800020;            /* burgundy */
+  margin-bottom: 15px;
+  text-align: center;
+  position: relative;
+}
+
+h3 {
+  font-size: 1rem;
+  color: #800020;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav a {
+  color: #fff;
+}
+
+.nav a:hover {
+  color: gold;
+}
+
+/********************* HERO **********************/
+.hero {
+  background-image: url("../images/hero.webp");
+  background-size: cover;  
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+
+  min-height: 60vh;
+  width: 100%;
+
+  display: flex;
+  color: white;
+  padding: 15px;
+}
+
+.hero-content p {
+  color: #000;
+}
+
+.hero-content h2 {
+  color: #000;
+}
+
+.hero a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 40px;
+  text-align: center;
+  background-color: #fff;
+}
+
+/******** MAIN *******/
+main {
+  padding: 30px;
+  align-items: center;
+  min-height: 40vh;
+}
+#about {
+  text-align: center;
+   max-width: 900px;
+   margin: 0 auto;
+   padding: 50px 20px;
+}
+
+#services h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+/************ SERVICE CARDS **********/
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.card {
+  border: 2px solid gold;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#faqs {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+   min-height: 20vh;
+   padding-top: 20px;
+   margin: 0;
+}
+
+#faqs ul {
+  display:inline-block;
+  text-align: left;
+}
+
+/********************* FOOTER *************************/
+footer {
+  background-color: #800020;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 5px;
+}
+
+/************* DESKTOP VIEW *******************/
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
