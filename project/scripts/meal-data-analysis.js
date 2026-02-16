@@ -116,5 +116,6 @@ if (form) {
     data[eventType].push(newMeal);
     saveData();
     this.reset();
-  });
+  }); 
 }
+ 
