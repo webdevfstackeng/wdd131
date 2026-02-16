@@ -1,0 +1,81 @@
+/****************** Original reset *****************************/
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f4f4;
+}
+
+/****************** Order section *****************************/
+#orders {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/****************** Section head *****************************/
+#orders h2 {
+    text-align: center;
+    color: #800020; /* Burgundy */
+    margin-bottom: 30px;
+}
+
+/****************** Form layout *****************************/
+#orderForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/******** Labels **********/
+#orderForm label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    color: #333;
+}
+
+/********* Inputs & select ********/
+#orderForm input,
+#orderForm select {
+    margin-top: 6px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+/********** Focus effect *************/
+#orderForm input:focus,
+#orderForm select:focus {
+    outline: none;
+    border: 1px solid #800020;
+    box-shadow: 0 0 5px rgba(128, 0, 32, 0.3);
+}
+
+/****************** Button styling *****************************/
+#orderForm button {
+    padding: 12px;
+    background-color: #800020; /* Burgundy */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#orderForm button:hover {
+    background-color: #a00028;
+}
+
+/****************** Responsive *****************/
+@media (max-width: 600px) {
+    #orders {
+        margin: 30px 15px;
+        padding: 25px;
+    }
+}
