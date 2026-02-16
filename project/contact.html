@@ -27,16 +27,18 @@
     <meta name="author" content="Kgotla Ephraim Boabilwe" />
   </head>
   <body>
-    <h1>Contact Details Submission</h1>
+    <div class="form-feedback">
+      <h1>Contact Details Submission</h1><br>
 
-    <h2>Thank you for submitting your contact details!</h2>
+      <p>Thank you for submitting your contact details!</p>
 
-    <p>We have received <span id="contactCount">0</span> contacts so far.</p>
+      <p>We have received <span id="contactCount">0</span> contacts so far.</p>
+    </div>
     <!--Display stored count when the review page loads -->
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        const count = localStorage.getItem("reviewCount") || 0;
-        document.getElementById("reviewCount").textContent = count;
+        const count = localStorage.getItem("contactCount") || 0;
+        document.getElementById("contactCount").textContent = count;
       });
     </script>
   </body>
