@@ -13,7 +13,7 @@ contacts.forEach((product) => {
 
 /*----- Keeping track of the number of contacts received ------*/
 
-const form = document.getElementById("contact-us-form");
+const form = document.getElementById("contactCount");
 
 if (form) {
   form.addEventListener("submit", () => {
