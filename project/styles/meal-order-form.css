@@ -18,7 +18,7 @@ body {
 /****************** Section head *****************************/
 #orders h2 {
     text-align: center;
-    color: #800020; /* Burgundy */
+    color: #555; /* Burgundy */
     margin-bottom: 30px;
 }
 
