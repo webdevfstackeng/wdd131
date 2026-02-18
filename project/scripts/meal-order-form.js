@@ -1,4 +1,4 @@
-/* The system captures meal orders through a form, stores them in arrays of objects grouped by event type, and calculates performance metrics dynamically using JavaScript methods. */
+/* The system captures meal orders through a form, stores them in arrays of objects grouped by event type, and computes performance metrics dynamically using JavaScript methods. */
 
 document.getElementById("orderForm").addEventListener("submit", function (e) {
   e.preventDefault();

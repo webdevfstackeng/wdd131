@@ -48,7 +48,7 @@ h1 {
 
 h2 {
   font-size: 1rem;
-  color: #555; 
+  color: #555;
   margin-bottom: 15px;
   text-align: center;
   position: relative;
@@ -194,7 +194,7 @@ main {
   font-weight: bold;
   margin-top: 80px;
 }
- 
+
 /********************* FOOTER *************************/
 footer {
   background-color: #800020;
@@ -213,7 +213,6 @@ footer {
 
 /************** MOBILE VIEW ************/
 @media (max-width: 768px) {
-
   .hamburger {
     display: block;
   }
@@ -232,7 +231,7 @@ footer {
   .nav ul li {
     padding: 12px;
     text-align: center;
-    border-top: 1px solid rgba(255,255,255,0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
   }
 
   .nav.active {

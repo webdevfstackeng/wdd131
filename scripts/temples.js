@@ -24,3 +24,17 @@ last.innerHTML = ` Last Modified: <span class="date-format">${new Intl.DateTimeF
 short.textContent = today.getFullYear();
 
  
+
+
+// Elements and ids accessing
+const menuButton = document.querySelector("#menu-button");
+const navMenu = document.querySelector("nav");
+
+//Navigation menu toggle
+menuButton.addEventListener("click", () => {
+  navMenu.classList.toggle("open");
+  menuButton.classList.toggle("open");
+});
+
+//hearder
+<button id="menu-button"></button>;

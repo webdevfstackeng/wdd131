@@ -71,7 +71,7 @@ const sortedWedding = [...weddingMeals].sort(
 console.log("***** WEDDING DISHES SORTED BY POPULARITY *****");
 console.table(sortedWedding);
 
-/*********************** Searching for a specific dish ********************/
+/*********************** Searching for a specific dish ******************/
 const findDish = weddingMeals.find((meal) => meal.name === "Beef Stew");
 
 console.log("**** SEARCH RESULT ****");
